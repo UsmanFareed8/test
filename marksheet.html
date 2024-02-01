@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marksheet</title>
+</head>
+<body>
+
+<script>
+  // Prompt the user to enter marks for three subjects
+  let subject1 = parseFloat(prompt("Enter marks for Subject 1:"));
+  let subject2 = parseFloat(prompt("Enter marks for Subject 2:"));
+  let subject3 = parseFloat(prompt("Enter marks for Subject 3:"));
+
+  // Calculate total and average marks
+  let totalMarks = subject1 + subject2 + subject3;
+  let averageMarks = totalMarks / 3;
+
+  // Determine the grade based on average marks
+  let grade;
+
+  if (averageMarks >= 90) {
+    grade = 'A+';
+  } else if (averageMarks >= 80) {
+    grade = 'A';
+  } else if (averageMarks >= 70) {
+    grade = 'B';
+  } else if (averageMarks >= 60) {
+    grade = 'C';
+  } else if (averageMarks >= 50) {
+    grade = 'D';
+  } else {
+    grade = 'F';
+  }
+
+  // Display the result
+  alert("Total Marks: " + totalMarks + "\nAverage Marks: " + averageMarks.toFixed(2) + "\nGrade: " + grade);
+</script>
+
+</body>
+</html>
+

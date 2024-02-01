@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Table</title>
+</head>
+<body>
+
+<script>
+  // Prompt the user to enter a number
+  let number = parseInt(prompt("Enter a number:"));
+
+  // Check if the user entered a valid number
+  if (isNaN(number)) {
+    alert("Invalid input. Please enter a valid number.");
+  } else {
+    // Display the multiplication table for the entered number up to 10
+    document.write("<h2>Multiplication Table for " + number + "</h2>");
+    document.write("<ul>");
+
+    for (let i = 1; i <= 10; i++) {
+      let result = number * i;
+      document.write("<li>" + number + " x " + i + " = " + result + "</li>");
+    }
+
+    document.write("</ul>");
+  }
+</script>
+
+</body>
+</html>

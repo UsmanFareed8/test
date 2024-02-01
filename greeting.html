@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greet User</title>
+</head>
+<body>
+
+<script>
+  // Define the greetUser function
+  function greetUser(userName) {
+    return "Hello, " + userName + " !Warm Welcome! Happy to see you here";
+  }
+
+  // Prompt the user to enter their name
+  let userInput = prompt("Enter your name:");
+
+  // Display the personalized greeting using the greetUser function
+  if (userInput) {
+    let greeting = greetUser(userInput);
+    alert(greeting);
+  } else {
+    alert("Invalid input. Please enter a name.");
+  }
+</script>
